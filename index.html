@@ -1,0 +1,22 @@
+<html>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.core.js"></script>
+  <script src="convert.js"></script>
+  <body>
+    <h1>
+      Convert Google Maps Lists to GeoJSON
+    </h1>
+    <ol>
+      <li>Navigate to Google Maps, click Your Places -> Saved -> click the list you want to export</li>
+      <li>Note that the name of the place must be in the "Note" section. I haven't found a list where it shows the label.</li>
+      <li>Copy and paste your Google Maps list into the left box</li>
+      <li>Click convert</li>
+      <li>Open Notepad or your favorite editor and paste the GeoJSON from the right box in</li>
+      <li>Save as .geojson or .json</li>
+      <li>Import into your preferred map app (tested with GaiaGPS)</li>
+    </ol>
+    <textarea id="input" rows="20" cols="80"></textarea>
+    <input type="button" value="Convert" id="convert" />
+    <textarea id="output" rows="20" cols="80"></textarea>
+  </body>
+</html>
